@@ -72,42 +72,69 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kw5-Yy-55I">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kw5-Yy-55I">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PLEASE SELECT A LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzM-7b-nAJ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE SELECT A LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzM-7b-nAJ">
                                                     <rect key="frame" x="8" y="24" width="359" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="h1Y-dz-bpx"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                     <color key="textColor" name="LetsEat Light Gray"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EXPLORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-Un-VnH">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPLORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-Un-VnH">
                                                     <rect key="frame" x="8" y="45" width="255" height="37"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="37" id="9m4-2Q-3Ww"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvY-DS-U8U">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvY-DS-U8U">
                                                     <rect key="frame" x="271" y="50" width="96" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Mge-2e-HLa"/>
+                                                        <constraint firstAttribute="width" constant="96" id="Zas-y8-0kW"/>
+                                                    </constraints>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="btn-location"/>
                                                     <connections>
                                                         <segue destination="fOP-Wx-nXn" kind="presentation" id="qyU-FY-xkk"/>
                                                     </connections>
                                                 </button>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Phy-A9-1hk">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phy-A9-1hk">
                                                     <rect key="frame" x="8" y="89" width="359" height="1"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" name="LetsEat Light Gray"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Vk8-hq-Oa2"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="IvY-DS-U8U" firstAttribute="top" secondItem="WzM-7b-nAJ" secondAttribute="bottom" constant="5" id="CJj-xD-nBx"/>
+                                                <constraint firstAttribute="height" constant="90" id="CVx-pe-LO6"/>
+                                                <constraint firstAttribute="trailing" secondItem="WzM-7b-nAJ" secondAttribute="trailing" constant="8" id="LEK-7Z-wq2"/>
+                                                <constraint firstItem="Phy-A9-1hk" firstAttribute="leading" secondItem="kw5-Yy-55I" secondAttribute="leading" constant="8" id="Laa-z0-8gv"/>
+                                                <constraint firstItem="WzM-7b-nAJ" firstAttribute="leading" secondItem="kw5-Yy-55I" secondAttribute="leading" constant="8" id="MqN-2e-UAK"/>
+                                                <constraint firstAttribute="trailing" secondItem="IvY-DS-U8U" secondAttribute="trailing" constant="8" id="bEd-F8-CkV"/>
+                                                <constraint firstItem="IvY-DS-U8U" firstAttribute="leading" secondItem="FuF-Un-VnH" secondAttribute="trailing" constant="8" id="drd-zb-tng"/>
+                                                <constraint firstItem="FuF-Un-VnH" firstAttribute="top" secondItem="WzM-7b-nAJ" secondAttribute="bottom" id="l2B-6T-gAo"/>
+                                                <constraint firstAttribute="bottom" secondItem="Phy-A9-1hk" secondAttribute="bottom" id="lYn-Jr-437"/>
+                                                <constraint firstItem="FuF-Un-VnH" firstAttribute="leading" secondItem="kw5-Yy-55I" secondAttribute="leading" constant="8" id="mQw-5a-nCy"/>
+                                                <constraint firstItem="WzM-7b-nAJ" firstAttribute="top" secondItem="kw5-Yy-55I" secondAttribute="top" constant="24" id="nhJ-H3-wBi"/>
+                                                <constraint firstAttribute="trailing" secondItem="Phy-A9-1hk" secondAttribute="trailing" constant="8" id="se2-ko-YGL"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kw5-Yy-55I" firstAttribute="top" secondItem="Lny-9s-kem" secondAttribute="top" id="gtU-6x-are"/>
+                                        <constraint firstAttribute="trailing" secondItem="kw5-Yy-55I" secondAttribute="trailing" id="oKX-MX-TYD"/>
+                                        <constraint firstItem="kw5-Yy-55I" firstAttribute="leading" secondItem="Lny-9s-kem" secondAttribute="leading" id="uG6-oV-X0o"/>
+                                    </constraints>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="ibY-Qa-2uZ" id="0kP-eH-IQz"/>
