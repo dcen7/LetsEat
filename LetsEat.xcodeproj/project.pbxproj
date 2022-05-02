@@ -14,6 +14,10 @@
 		FB5678A3281702DB00EB01EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5678A2281702DB00EB01EC /* Assets.xcassets */; };
 		FB5678A628170BC000EB01EC /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5678A528170BC000EB01EC /* ExploreViewController.swift */; };
 		FB5678A928182D6900EB01EC /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5678A828182D6900EB01EC /* RestaurantListViewController.swift */; };
+		FBEE614F281AEACC0088089A /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBEE614E281AEACC0088089A /* ExploreData.plist */; };
+		FBEE6151281AF2D10088089A /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE6150281AF2D10088089A /* ExploreItem.swift */; };
+		FBEE6153281AF9030088089A /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE6152281AF9030088089A /* ExploreDataManager.swift */; };
+		FBEE6156281C33C50088089A /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE6155281C33C50088089A /* ExploreCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		FB5678A2281702DB00EB01EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5678A528170BC000EB01EC /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		FB5678A828182D6900EB01EC /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		FBEE614E281AEACC0088089A /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
+		FBEE6150281AF2D10088089A /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
+		FBEE6152281AF9030088089A /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
+		FBEE6155281C33C50088089A /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		FB56788D2816EFC100EB01EC /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				FBEE614D281AEAB40088089A /* Model */,
 				FB5678A728182D3500EB01EC /* Restaurants */,
 				FB5678A428170B7800EB01EC /* Explore */,
 				FB56788E2816EFC100EB01EC /* AppDelegate.swift */,
@@ -73,6 +82,7 @@
 		FB5678A428170B7800EB01EC /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				FBEE6154281C33930088089A /* View */,
 				FB5678A528170BC000EB01EC /* ExploreViewController.swift */,
 			);
 			path = Explore;
@@ -84,6 +94,24 @@
 				FB5678A828182D6900EB01EC /* RestaurantListViewController.swift */,
 			);
 			path = Restaurants;
+			sourceTree = "<group>";
+		};
+		FBEE614D281AEAB40088089A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBEE614E281AEACC0088089A /* ExploreData.plist */,
+				FBEE6150281AF2D10088089A /* ExploreItem.swift */,
+				FBEE6152281AF9030088089A /* ExploreDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBEE6154281C33930088089A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBEE6155281C33C50088089A /* ExploreCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBEE614F281AEACC0088089A /* ExploreData.plist in Resources */,
 				FB56789B2816EFC500EB01EC /* LaunchScreen.storyboard in Resources */,
 				FB5678A3281702DB00EB01EC /* Assets.xcassets in Resources */,
 				FB5678962816EFC100EB01EC /* Main.storyboard in Resources */,
@@ -157,10 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBEE6151281AF2D10088089A /* ExploreItem.swift in Sources */,
+				FBEE6156281C33C50088089A /* ExploreCell.swift in Sources */,
 				FB56788F2816EFC100EB01EC /* AppDelegate.swift in Sources */,
 				FB5678A928182D6900EB01EC /* RestaurantListViewController.swift in Sources */,
 				FB5678912816EFC100EB01EC /* SceneDelegate.swift in Sources */,
 				FB5678A628170BC000EB01EC /* ExploreViewController.swift in Sources */,
+				FBEE6153281AF9030088089A /* ExploreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
