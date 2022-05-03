@@ -11,20 +11,22 @@ class LocationViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet var tableView: UITableView!
     
-
+    let manager = LocationDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        manager.fetch()
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        20
+        manager.numberOfLocationItems()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath)
-        cell.textLabel?.text = "A cell"
+        cell.textLabel?.text = manager.locationItem(at: indexPath.row)
         return cell
     }
     
