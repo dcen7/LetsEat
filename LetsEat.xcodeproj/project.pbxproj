@@ -18,6 +18,7 @@
 		FBD5841A2840E6060007E5E6 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD584192840E6060007E5E6 /* RestaurantItem.swift */; };
 		FBD5841C2840E78A0007E5E6 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5841B2840E78A0007E5E6 /* MapDataManager.swift */; };
 		FBD5841F2840EC2F0007E5E6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5841E2840EC2F0007E5E6 /* DataManager.swift */; };
+		FBD58421284119F30007E5E6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD58420284119F30007E5E6 /* MapViewController.swift */; };
 		FBEE614F281AEACC0088089A /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBEE614E281AEACC0088089A /* ExploreData.plist */; };
 		FBEE6151281AF2D10088089A /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE6150281AF2D10088089A /* ExploreItem.swift */; };
 		FBEE6153281AF9030088089A /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE6152281AF9030088089A /* ExploreDataManager.swift */; };
@@ -41,6 +42,7 @@
 		FBD584192840E6060007E5E6 /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
 		FBD5841B2840E78A0007E5E6 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
 		FBD5841E2840EC2F0007E5E6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FBD58420284119F30007E5E6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FBEE614E281AEACC0088089A /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		FBEE6150281AF2D10088089A /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		FBEE6152281AF9030088089A /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FBD58416283FFD5D0007E5E6 /* Model */,
+				FBD58420284119F30007E5E6 /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				FBEE6156281C33C50088089A /* ExploreCell.swift in Sources */,
 				FB56788F2816EFC100EB01EC /* AppDelegate.swift in Sources */,
 				FB5678A928182D6900EB01EC /* RestaurantListViewController.swift in Sources */,
+				FBD58421284119F30007E5E6 /* MapViewController.swift in Sources */,
 				FB5678912816EFC100EB01EC /* SceneDelegate.swift in Sources */,
 				FB5678A628170BC000EB01EC /* ExploreViewController.swift in Sources */,
 				FBEE6153281AF9030088089A /* ExploreDataManager.swift in Sources */,
