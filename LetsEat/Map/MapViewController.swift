@@ -14,10 +14,21 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     private let manager = MapDataManager()
     
+    var selectedRestaurant: RestaurantItem?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         initialize()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier! {
+        case Segue.showDetail.rawValue:
+            showRestaurantDetail(segue: segue)
+        default:
+            print("Segue not added")
+        }
     }
     
     func initialize() {
@@ -30,6 +41,12 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     func setupMap(_ annotations: [RestaurantItem]) {
         mapView.setRegion(manager.initialRegion(latDelta: 0.5, longDelta: 0.5), animated: true)
         mapView.addAnnotations(manager.annotations)
+    }
+    
+    func showRestaurantDetail(segue: UIStoryboardSegue) {
+        if let viewController = segue.destination as? RestaurantDetailViewController, let restaurant = selectedRestaurant {
+            viewController.selectedRestaurant = restaurant
+        }
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -57,6 +74,14 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             annotationView.centerOffset = CGPoint(x: -image.size.width / 2, y: -image.size.height / 2)
         }
         return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let annotation = mapView.selectedAnnotations.first else {
+            return
+        }
+        selectedRestaurant = annotation as? RestaurantItem
+        self.performSegue(withIdentifier: Segue.showDetail.rawValue, sender: self)
     }
     
     
