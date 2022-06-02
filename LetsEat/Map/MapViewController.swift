@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController {
 
     @IBOutlet var mapView: MKMapView!
     
@@ -30,6 +30,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             print("Segue not added")
         }
     }
+}
+
+//MARK: Private Extension
+private extension MapViewController {
     
     func initialize() {
         mapView.delegate = self
@@ -47,6 +51,18 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         if let viewController = segue.destination as? RestaurantDetailViewController, let restaurant = selectedRestaurant {
             viewController.selectedRestaurant = restaurant
         }
+    }
+}
+
+//MARK: MKMapViewDelegate
+extension MapViewController: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let annotation = mapView.selectedAnnotations.first else {
+            return
+        }
+        selectedRestaurant = annotation as? RestaurantItem
+        self.performSegue(withIdentifier: Segue.showDetail.rawValue, sender: self)
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -75,14 +91,4 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
         return annotationView
     }
-    
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        guard let annotation = mapView.selectedAnnotations.first else {
-            return
-        }
-        selectedRestaurant = annotation as? RestaurantItem
-        self.performSegue(withIdentifier: Segue.showDetail.rawValue, sender: self)
-    }
-    
-    
 }
