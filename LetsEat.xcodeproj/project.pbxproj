@@ -39,6 +39,8 @@
 		FBD5844A2848E5DC0007E5E6 /* San Francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = FBD5843C2848E5DB0007E5E6 /* San Francisco.json */; };
 		FBD5844B2848E5DC0007E5E6 /* Chicago.json in Resources */ = {isa = PBXBuildFile; fileRef = FBD5843D2848E5DC0007E5E6 /* Chicago.json */; };
 		FBD5844E2848E7470007E5E6 /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5844D2848E7470007E5E6 /* RestaurantDataManager.swift */; };
+		FBD584502849464D0007E5E6 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5844F2849464D0007E5E6 /* LocationItem.swift */; };
+		FBD58452284A739C0007E5E6 /* ExploreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD58451284A739C0007E5E6 /* ExploreHeaderView.swift */; };
 		FBEE614F281AEACC0088089A /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBEE614E281AEACC0088089A /* ExploreData.plist */; };
 		FBEE6151281AF2D10088089A /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE6150281AF2D10088089A /* ExploreItem.swift */; };
 		FBEE6153281AF9030088089A /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE6152281AF9030088089A /* ExploreDataManager.swift */; };
@@ -83,6 +85,8 @@
 		FBD5843C2848E5DB0007E5E6 /* San Francisco.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "San Francisco.json"; sourceTree = "<group>"; };
 		FBD5843D2848E5DC0007E5E6 /* Chicago.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Chicago.json; sourceTree = "<group>"; };
 		FBD5844D2848E7470007E5E6 /* RestaurantDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDataManager.swift; sourceTree = "<group>"; };
+		FBD5844F2849464D0007E5E6 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		FBD58451284A739C0007E5E6 /* ExploreHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHeaderView.swift; sourceTree = "<group>"; };
 		FBEE614E281AEACC0088089A /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExploreData.plist; sourceTree = "<group>"; };
 		FBEE6150281AF2D10088089A /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		FBEE6152281AF9030088089A /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				FBEE6155281C33C50088089A /* ExploreCell.swift */,
+				FBD58451284A739C0007E5E6 /* ExploreHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 			children = (
 				FBEE615C2821654B0088089A /* Locations.plist */,
 				FBEE615E282169090088089A /* LocationDataManager.swift */,
+				FBD5844F2849464D0007E5E6 /* LocationItem.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -377,6 +383,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD584502849464D0007E5E6 /* LocationItem.swift in Sources */,
+				FBD58452284A739C0007E5E6 /* ExploreHeaderView.swift in Sources */,
 				FBEE6151281AF2D10088089A /* ExploreItem.swift in Sources */,
 				FBD5841F2840EC2F0007E5E6 /* DataManager.swift in Sources */,
 				FBD5841C2840E78A0007E5E6 /* MapDataManager.swift in Sources */,

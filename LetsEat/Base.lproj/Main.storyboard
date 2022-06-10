@@ -118,7 +118,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="Lny-9s-kem">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="Lny-9s-kem" customClass="ExploreHeaderView" customModule="LetsEat" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -185,6 +185,9 @@
                                         <constraint firstAttribute="trailing" secondItem="kw5-Yy-55I" secondAttribute="trailing" id="oKX-MX-TYD"/>
                                         <constraint firstItem="kw5-Yy-55I" firstAttribute="leading" secondItem="Lny-9s-kem" secondAttribute="leading" id="uG6-oV-X0o"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="locationLabel" destination="WzM-7b-nAJ" id="X5u-FE-Hd0"/>
+                                    </connections>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="ibY-Qa-2uZ" id="0kP-eH-IQz"/>
@@ -509,7 +512,11 @@
                                 <segue destination="0IA-9I-dg5" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="CIh-7V-GA8"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="NSG-Xn-3dc"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="NSG-Xn-3dc">
+                            <connections>
+                                <segue destination="0IA-9I-dg5" kind="unwind" unwindAction="unwindLocationDoneWithSegue:" id="FOr-Wq-3E0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="fst-pH-LyV" id="wFa-Yl-UBh"/>
