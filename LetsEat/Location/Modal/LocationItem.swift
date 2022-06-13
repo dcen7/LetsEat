@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LocationItem {
+struct LocationItem: Equatable {
     let city: String?
     let state: String?
 }
