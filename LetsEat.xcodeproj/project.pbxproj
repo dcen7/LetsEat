@@ -17,6 +17,8 @@
 		FB5678A3281702DB00EB01EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5678A2281702DB00EB01EC /* Assets.xcassets */; };
 		FB5678A628170BC000EB01EC /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5678A528170BC000EB01EC /* ExploreViewController.swift */; };
 		FB5678A928182D6900EB01EC /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5678A828182D6900EB01EC /* RestaurantListViewController.swift */; };
+		FB8F7DD92860AE5A00B8A792 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F7DD82860AE5A00B8A792 /* RatingsView.swift */; };
+		FBA1D26A28624C05002C2B58 /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA1D26928624C05002C2B58 /* ReviewFormViewController.swift */; };
 		FBD58418283FFDAB0007E5E6 /* MapLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBD58417283FFDAB0007E5E6 /* MapLocations.plist */; };
 		FBD5841A2840E6060007E5E6 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD584192840E6060007E5E6 /* RestaurantItem.swift */; };
 		FBD5841C2840E78A0007E5E6 /* MapDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5841B2840E78A0007E5E6 /* MapDataManager.swift */; };
@@ -66,6 +68,8 @@
 		FB5678A2281702DB00EB01EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB5678A528170BC000EB01EC /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		FB5678A828182D6900EB01EC /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		FB8F7DD82860AE5A00B8A792 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		FBA1D26928624C05002C2B58 /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
 		FBD58417283FFDAB0007E5E6 /* MapLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MapLocations.plist; sourceTree = "<group>"; };
 		FBD584192840E6060007E5E6 /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
 		FBD5841B2840E78A0007E5E6 /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				FBD584262847BD000007E5E6 /* ReviewForm.storyboard */,
+				FB8F7DD82860AE5A00B8A792 /* RatingsView.swift */,
+				FBA1D26928624C05002C2B58 /* ReviewFormViewController.swift */,
 			);
 			path = ReviewForm;
 			sourceTree = "<group>";
@@ -409,7 +415,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA1D26A28624C05002C2B58 /* ReviewFormViewController.swift in Sources */,
 				FBD584502849464D0007E5E6 /* LocationItem.swift in Sources */,
+				FB8F7DD92860AE5A00B8A792 /* RatingsView.swift in Sources */,
 				FBD58452284A739C0007E5E6 /* ExploreHeaderView.swift in Sources */,
 				FBEE6151281AF2D10088089A /* ExploreItem.swift in Sources */,
 				FBD5841F2840EC2F0007E5E6 /* DataManager.swift in Sources */,

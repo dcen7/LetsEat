@@ -20,6 +20,7 @@ class RestaurantDetailViewController: UITableViewController {
     @IBOutlet var tableDetailsLabel: UILabel!
     //Cell Three
     @IBOutlet var overallRatingsLabel: UILabel!
+    @IBOutlet var ratingsView: RatingsView!
     //Cell Eight
     @IBOutlet var addressLabel: UILabel!
     //Cell Nine
@@ -41,6 +42,12 @@ private extension RestaurantDetailViewController {
     func initilize() {
         setupLabels()
         createMap()
+        createRating()
+    }
+    
+    func createRating() {
+        self.ratingsView.rating = 3.5
+        ratingsView.isEnabled = true
     }
     
     func setupLabels() {
@@ -54,6 +61,10 @@ private extension RestaurantDetailViewController {
         headerAddressLabel.text = restaurant.address
         tableDetailsLabel.text = "Table for 7, tonight at 10:00 PM"
         addressLabel.text = restaurant.address
+    }
+    
+    @IBAction func unwindReviewCancel(segue: UIStoryboardSegue) {
+        
     }
     
     func createMap() {

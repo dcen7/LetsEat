@@ -194,7 +194,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-Bj-2jp">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pgj-Bj-2jp" customClass="RatingsView" customModule="LetsEat" customModuleProvider="target">
                                                     <rect key="frame" x="151" y="43" width="205" height="34"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -464,6 +464,7 @@
                         <outlet property="locationMapImageView" destination="eZM-l0-bwa" id="ROF-xT-6K9"/>
                         <outlet property="nameLabel" destination="6er-aK-n02" id="SAr-Y0-bIc"/>
                         <outlet property="overallRatingsLabel" destination="zON-CP-XRT" id="fmz-ZS-IMz"/>
+                        <outlet property="ratingsView" destination="Pgj-Bj-2jp" id="TNX-JL-amf"/>
                         <outlet property="tableDetailsLabel" destination="QHZ-op-gz0" id="3f2-33-dGT"/>
                     </connections>
                 </tableViewController>
