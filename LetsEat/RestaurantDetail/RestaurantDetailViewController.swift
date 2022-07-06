@@ -37,6 +37,7 @@ class RestaurantDetailViewController: UITableViewController {
 
 }
 
+// MARK: - Private Extension
 private extension RestaurantDetailViewController {
     
     func initilize() {
