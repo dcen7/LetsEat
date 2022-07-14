@@ -92,7 +92,11 @@
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="save" id="LqQ-au-GU8"/>
+                            <barButtonItem systemItem="save" id="LqQ-au-GU8">
+                                <connections>
+                                    <action selector="onSaveTapped:" destination="VI2-nK-ly1" id="3B1-aY-sxe"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="icon-photo" id="kkC-ZD-maP">
                                 <connections>
                                     <action selector="onPhotoTapped:" destination="VI2-nK-ly1" id="rS3-xf-xyf"/>
