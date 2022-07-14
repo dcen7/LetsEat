@@ -11,7 +11,7 @@ import CoreData
 struct CoreDataManager {
     let container: NSPersistentContainer
     init() {
-        container = NSPersistentContainer(name: "LetsEatMode")
+        container = NSPersistentContainer(name: "LetsEatModel")
         container.loadPersistentStores { (storeDesc, error) in
             error.map {
                 print($0)
