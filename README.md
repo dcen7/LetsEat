@@ -4,8 +4,7 @@
 MVC , CollectionViews , TableViews , MapKit , JSON , Static TableView , Custom UI Controls , Cameras and Photo Libraries. 
 
 ## Screenshots
-<img src="images/Launch.png" width="230">
-<img src="images/Main.png" width="230">
+<img src="images/Launch.png" width="230"><img src="images/Main.png" width="230">
 <img src="images/List.png" width="230">
 <img src="images/Norestaurant.png" width="230">
 <img src="images/Restaurantlist.png" width="230">
